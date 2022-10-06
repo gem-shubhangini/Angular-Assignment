@@ -4,8 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "predeploy": " npm rum build",
-    "deploy": " gh-pages -d build",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -34,7 +32,6 @@
     "@angular/cli": "~14.2.3",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
-    "gh-pages": "^4.0.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
