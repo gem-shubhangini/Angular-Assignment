@@ -1,5 +1,5 @@
-<h1 class="my-5">Angular Assignment 1</h1>
-<app-detail class="mb-3"></app-detail>
+<h1 class="my-5">{{title}}1</h1>
+<app-detail class="mb-5"></app-detail>
 <form [formGroup]="listForm" class="row g-2 mb-3">  
     <div class="col-3 ">
    <input  class="form-control" type="text" id="floatingInput" formControlName="addedinput" (keyup)="getInput()" placeholder="Enter some input"/>
@@ -10,9 +10,9 @@
 </form>
 <ul *ngFor="let x of list; let index = index;" 
             class="row">
-<h5 *ngIf="(index+1)%5; else elseBlock">{{index+1}} :{{x}}</h5>
+<h5 *ngIf="(index+1)%5; else elseBlock">{{index+1}}. {{x}}</h5>
 <ng-template #elseBlock>
-    <h5 id="colored" class="text-light bg-primary mx-5 w-25 " >{{index+1}} :{{x}}</h5>
+    <h5 id="colored" class="text-light bg-primary mx-5 w-25 " >{{index+1}}. {{x}}</h5>
 </ng-template>
 </ul>
 <router-outlet></router-outlet>

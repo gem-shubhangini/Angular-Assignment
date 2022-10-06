@@ -6,7 +6,7 @@ import { FormControl ,FormGroup, FormControlName} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment';
+  title = 'Angular Assignment';
   sentvalue:string="";
   prev=0;
   list:any;
